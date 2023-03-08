@@ -1,12 +1,20 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<title>Login Page</title>
+	<link rel="stylesheet" type="text/css" href="css_strona.css">
 </head>
 <body>
-    
+	<div class="login-box">
+		<h1>Login Here</h1>
+		<form>
+			<label>Username</label>
+			<input type="text" name="username" placeholder="Enter Username">
+			<label>Password</label>
+			<input type="password" name="password" placeholder="Enter Password">
+			<input type="submit" name="submit" value="Login">
+			<p>Don't have an account? <a href="#">Sign Up</a></p>
+		</form>
+	</div>
 </body>
 </html>
