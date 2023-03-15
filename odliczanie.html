@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- tu będzie zegar -->
+        <center>
+            <section>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </section>
+            <h1><p id="demo"></p></h1>
+        </center>
+            <script>
+        // ustawianie daty
+            var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
+        // zmienia wartoeść co 1 sek
+            var x = setInterval(function() 
+                {
+        // dzisiejsza data
+            var now = new Date().getTime();
+        // jakby szuka dzisiejszej daty i ustawionej
+            var distance = countDownDate - now;
+        // liczy czas  na minuty sekundy
+           // var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            var setn_seconds = Math.floor((distance % (1000 * 60)));
+        // umieszcza czas w <p id="demo">
+                document.getElementById("demo").innerHTML = //minutes + "min " + 
+                seconds + "sek " +  setn_seconds + "setnesek ";
+        // jak czas wyniesie 0 pojawi się
+                if (distance < 0) 
+                    {
+                        clearInterval(x);
+                        document.getElementById("demo").innerHTML = "czas";
+                    }
+                }, 1000);
+            </script>
+</body>
+</html>
