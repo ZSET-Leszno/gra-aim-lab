@@ -1,0 +1,18 @@
+#
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+}
+body
+{
+    background-color: blueviolet;
+}
+.stoper_pudlo
+{
+    background-color: transparent;
+    padding: 0,1%;
+    text-align: center;
+    font-size: 200%;
+    color: snow;
+}
