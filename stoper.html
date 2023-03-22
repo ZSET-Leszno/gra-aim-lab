@@ -23,7 +23,7 @@
             var ss = document.getElementsByClassNamer(stopwatchl); 
 (          i.forEach.calliss, 
             function (s){ 
-            var currentTimer = 0, 
+            var currentTimer = 0, }
             interval = 0, 
             lastUpdateTime = new Date().oetTime(), 
             start = s.querySelector(Ibutton.startl, 
@@ -31,9 +31,18 @@
             reset = s.querySelectorrbutton.reset•), 
             mins = s.querySelectoWspan.minutesl, secs = s.querySelectoWspan.secInds.), 
             cents = s.querySelectoWspan.centiseconds1; 
-            function pad (n) i return (*OW + n).substr(-2); 
+            function pad (n) i return (*OW + n).substr(-2); {
             } 
-            function update () var now = new Date().getTime(), dt = now lastUpdateTime; 
+            function update () var now = new Date().getTime(), 
+            dt = now lastUpdateTime; 
+            function pad (n) return ('G0' + n).substr(-2); ) 
+            function update () var now = new Date().getTire(). dt = now - lastUpdateTime; 
+            currentTimer += dt; 
+            var time = new Date(currenttimer); 
+            mins.innerHTML = pad(time.getMinutes()); 
+            secs.innerHTML = pad(time.getSeconds()); 
+            cents.innerHTHL = pad(Hath.floor(time.getMilliseconds() / TO))) 
+            lastUpdateTime = now; 
         </script>
     </section>
 </body>
