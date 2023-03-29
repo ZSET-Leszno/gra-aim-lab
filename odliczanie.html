@@ -4,55 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stoper_styl.css">
     <title>Document</title>
 </head>
 <body>
-        <!-- tu będzie zegar -->
-<<<<<<< HEAD
-    <p id="demo"></p>
-=======
-        <center>
-            <section>
-            </br>
-            </br>
-            </br>
-            </br>
-            </br>
-            </br>
-            </section>
-            <h1><p id="demo"></p></h1>
-        </center>
->>>>>>> fd4c56bcf2fbc0aedf1a7a7e2c9c4d9cc1ab165f
-            <script>
-        // ustawianie daty
-            var countDownDate = new Date("Jan 5, 2024 15:37:25").getTime();
-        // zmienia wartoeść co 1 sek
-            var x = setInterval(function() 
-                {
-        // dzisiejsza data
-            var now = new Date().getTime();
-        // jakby szuka dzisiejszej daty i ustawionej
-            var distance = countDownDate - now;
-        // liczy czas  na minuty sekundy
-           // var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-<<<<<<< HEAD
-        // umieszcza czas w <p id="demo">
-                document.getElementById("demo").innerHTML = //minutes + 
-                "m " + seconds + "s ";
-=======
-            var setn_seconds = Math.floor((distance % (1000 * 60)));
-        // umieszcza czas w <p id="demo">
-                document.getElementById("demo").innerHTML = //minutes + "min " + 
-                seconds + "sek " +  setn_seconds + "setnesek ";
->>>>>>> fd4c56bcf2fbc0aedf1a7a7e2c9c4d9cc1ab165f
-        // jak czas wyniesie 0 pojawi się
-                if (distance < 0) 
-                    {
-                        clearInterval(x);
-                        document.getElementById("demo").innerHTML = "czas";
-                    }
-                }, 1000);
-            </script>
+    <section class="stoper_pudlo">
+        roboczy napis do dclksk 0:00
+        <script src="stoper.js">
+            //https://youtu.be/fF-vtP3sjPc?t=488
+            //
+            var ss= DocumentGetElementByClassName('stopwatch');
+            //[].forEach.clalss function
+            var currenttimer=0
+            Interval=0
+            //lastupdatetime=new .date() .gettime() , 
+            //
+            var ss = document.getElementsByClassNamer(stopwatchl); 
+(          i.forEach.calliss, 
+            function (s){ 
+            var currentTimer = 0, }
+            interval = 0, 
+            lastUpdateTime = new Date().oetTime(), 
+            start = s.querySelector(Ibutton.startl, 
+            stop = s.querySelector('button.stop'), 
+            reset = s.querySelectorrbutton.reset•), 
+            mins = s.querySelectoWspan.minutesl, secs = s.querySelectoWspan.secInds.), 
+            cents = s.querySelectoWspan.centiseconds1; 
+            function pad (n) i return (*OW + n).substr(-2); {
+            } 
+            function update () var now = new Date().getTime(), 
+            dt = now lastUpdateTime; 
+            function pad (n) return ('G0' + n).substr(-2); ) 
+            function update () 
+            var now = new Date().getTire(). dt = now - lastUpdateTime; 
+            currentTimer += dt; 
+            var time = new Date(currenttimer); 
+            mins.innerHTML = pad(time.getMinutes()); 
+            secs.innerHTML = pad(time.getSeconds()); 
+            cents.innerHTHL = pad(Hath.floor(time.getMilliseconds() / TO))) 
+            lastUpdateTime = now; 
+        </script>
+    </section>
 </body>
 </html>
